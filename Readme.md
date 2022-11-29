@@ -1,3 +1,5 @@
+# this repo forked from https://github.com/Fahrj/reverse-ssh
+to only listen on 127.0.0.1
 # ReverseSSH
 
 **A statically-linked ssh server with a reverse connection feature for simple yet powerful remote access. Most useful during HackTheBox challenges, CTFs or similar.**
