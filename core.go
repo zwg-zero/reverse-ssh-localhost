@@ -351,7 +351,7 @@ func run(p *params, server ssh.Server) {
 
 	if p.listen || p.LHOST == "" {
 		log.Printf("Starting ssh server on :%d", p.LPORT)
-		ln, err = net.Listen("tcp", fmt.Sprintf(":%d", p.LPORT))
+		ln, err = net.Listen("tcp", fmt.Sprintf("127.0.0.1:%d", p.LPORT))
 		if err == nil {
 			log.Printf("Success: listening on %s", ln.Addr().String())
 		}
